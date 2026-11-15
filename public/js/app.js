@@ -94,6 +94,39 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
   });
 }
 
+/* ---------- Install as an app ---------- */
+
+// Browsers that can install the site say so with this event. iPhones never do, so there the
+// button explains the Share menu instead. Hidden once it's already running as an app.
+const installButton = $('#install-button');
+const installHint = $('#install-hint');
+const installed = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+const onIphone = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+let installPrompt = null;
+
+addEventListener('beforeinstallprompt', (event) => {
+  event.preventDefault();
+  installPrompt = event;
+  installButton.hidden = false;
+});
+addEventListener('appinstalled', () => {
+  installButton.hidden = true;
+  installHint.hidden = true;
+});
+if (!installed && onIphone) installButton.hidden = false;
+
+installButton.addEventListener('click', async () => {
+  if (installPrompt) {
+    installPrompt.prompt();
+    await installPrompt.userChoice;
+    installPrompt = null;
+    installButton.hidden = true;
+    return;
+  }
+  installHint.textContent = 'To install Enginie, tap the Share button in Safari, then “Add to Home Screen”.';
+  installHint.hidden = !installHint.hidden;
+});
+
 document.documentElement.classList.toggle('reduced', reducedMotion());
 showMode();
 startInkPress();

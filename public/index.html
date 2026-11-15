@@ -11,6 +11,9 @@
   <meta property="og:type" content="website">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Enginie">
   <link rel="preload" href="fonts/BarlowCondensed-800.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script type="module" src="js/app.js"></script>
@@ -29,9 +32,12 @@
         <a href="#/help" data-nav="help">Dealing with the shop</a>
         <a href="#/about" data-nav="about">How far to trust this</a>
       </nav>
+      <button class="mode-toggle" id="install-button" type="button" hidden>Install app</button>
       <button class="mode-toggle" id="mechanic-toggle" type="button" aria-pressed="false">Mechanic mode: off</button>
     </div>
   </header>
+
+  <p class="install-hint" id="install-hint" role="status" hidden></p>
 
   <main id="main" tabindex="-1"></main>
 

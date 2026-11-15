@@ -2,13 +2,17 @@
 // first so that updates arrive straight away, and falls back to the saved copy when offline.
 
 // Bump the version whenever this list changes. Every file in it must exist, or nothing is saved.
-const CACHE = 'enginie-v5';
+const CACHE = 'enginie-v6';
 const FILES = [
   './',
   'index.html',
   'styles.css',
   'manifest.webmanifest',
   'icon.svg',
+  'icon-192.png',
+  'icon-512.png',
+  'icon-maskable-512.png',
+  'apple-touch-icon.png',
   'data/sound-database.json',
   'js/app.js',
   'js/audio.js',

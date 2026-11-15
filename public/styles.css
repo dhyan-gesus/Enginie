@@ -1292,3 +1292,6 @@ input::placeholder { color: var(--ink); opacity: 0.6; font-weight: 400; }
   .result { padding-top: 0; }
   .stamp { -webkit-mask-image: none; mask-image: none; }
 }
+
+/* Shown on iPhones, which have no install prompt of their own. */
+.install-hint { margin: 0; padding: 10px 16px; background: var(--ink); color: var(--canary); font-weight: 600; text-align: center; }
