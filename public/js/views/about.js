@@ -38,6 +38,7 @@ export function renderAbout(main) {
         <li><strong>Only 4 of the ${FAULTS.length} faults could be tested</strong> on real recordings. The rest rely on mechanical knowledge and haven’t been tested this way, including all the brake and wheel faults and rod knock.</li>
         <li><strong>Some of the recordings may come from the same cars,</strong> which would make the 91% look better than it is. It shows what’s possible, not a promise.</li>
         <li><strong>The site doesn’t include those real recordings,</strong> because their license isn’t clear. So the 91% row only applies once you’ve saved real recordings of your own. Until then, expect something closer to the middle row.</li>
+        <li><strong>The site now includes measurements of 32 real recordings</strong> from Freesound, covering 10 faults: squealing brakes, a slipping belt, rod knock, a misfire, an engine that cranks but won’t start and a few others. On the 132 phone recordings of faults, they raised “top answer right” from 55% to 60% with basic answers, and left the top three about the same. We picked them from their uploaders’ descriptions and from what they measure as. Nobody has checked them by ear yet, and most faults still have none.</li>
         <li><strong>A real recording gives a boost, not the final word.</strong> Only the fault whose recording sounds closest gets it, and only as far as your answers agree. We used to let a close real match override everything, but on a second, mixed set of 38 real recordings covering 16 faults, that put the right fault in the top three less often. A clip of one fault often sounded closest to a recording of a different one.</li>
         <li><strong>Misfires were the hardest to measure.</strong> They read as an uneven beat only about 40% of the time, so trust a code reader over this site for misfires.</li>
       </ul>
@@ -46,7 +47,20 @@ export function renderAbout(main) {
 
     <section class="help-section" data-reveal aria-labelledby="sounds-title">
       <h2 id="sounds-title">What the example sounds are</h2>
-      <p class="section-lede">Every example sound is computer-generated, because real recordings aren’t available yet. Engines are built from their real firing order, so a V8 and an inline 6 sound different for the right reasons. But in our tests, comparing a real recording with generated sounds did no better than guessing. So they’re only there for you to listen to, and they play no part in choosing your results.</p>
+      <p class="section-lede">Every example sound you can play is computer-generated, because we only keep measurements of real recordings, not their audio. Engines are built from their real firing order, so a V8 and an inline 6 sound different for the right reasons. But in our tests, comparing a real recording with generated sounds did no better than guessing. So they’re only there for you to listen to, and they play no part in choosing your results.</p>
+    </section>
+
+    <section class="help-section" data-reveal aria-labelledby="credits-title">
+      <h2 id="credits-title">Recording credits</h2>
+      <p class="section-lede">The real recordings come from <a href="https://freesound.org" rel="noopener">Freesound</a>. Most are in the public domain (CC0). These ones are used under Creative Commons Attribution licenses. Each was trimmed and reduced to measurements, and no audio from them is included in this site.</p>
+      <ul class="dash-list">
+        <li><a href="https://freesound.org/s/123684/" rel="noopener">Chev 350 failed start</a> and <a href="https://freesound.org/s/167911/" rel="noopener">Short Engine Turnover-No Start</a> by lonemonk, <a href="https://creativecommons.org/licenses/by/3.0/" rel="noopener">CC BY 3.0</a></li>
+        <li><a href="https://freesound.org/s/191869/" rel="noopener">Palio</a> by rahulbasu, <a href="https://creativecommons.org/licenses/by/3.0/" rel="noopener">CC BY 3.0</a></li>
+        <li><a href="https://freesound.org/s/259622/" rel="noopener">Diesel Engine Rattle</a> by Stevious42, <a href="https://creativecommons.org/licenses/by/3.0/" rel="noopener">CC BY 3.0</a></li>
+        <li><a href="https://freesound.org/s/843896/" rel="noopener">Misfiring Engine Volvo 240</a> by j_soundeffects, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a></li>
+        <li><a href="https://freesound.org/s/82321/" rel="noopener">squeaky brakes dry</a> by IEDLabs, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a></li>
+        <li><a href="https://freesound.org/s/95376/" rel="noopener">Squeaky_Brakes</a> by tiredoldwhiteman, <a href="https://creativecommons.org/licenses/by/3.0/" rel="noopener">CC BY 3.0</a></li>
+      </ul>
     </section>
 
     <section class="help-section" data-reveal aria-labelledby="costs-title">

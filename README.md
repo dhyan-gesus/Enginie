@@ -36,6 +36,7 @@ Things to know:
 
 - Only 4 of the 44 faults could be tested this way, so the rest rely on mechanical knowledge.
 - Comparing real recordings with computer-generated sounds did no better than guessing. That’s why generated sounds are only for listening, and play no part in the results.
+- The database includes measurements of 32 real recordings from Freesound (CC0 and CC BY, credited on the site and in `recordings/*/SOURCES.md`), covering 10 faults. On 132 separate phone recordings of faults they raised “top answer right” from 55% to 60% with basic answers; the top three stayed about the same. They were chosen from descriptions and measurements and haven’t been checked by ear.
 - Real recordings are what make it accurate. The fault whose real recording sounds closest gets a capped boost, scaled by how well the answers fit, and never against the sound words someone picked. Letting a close match override everything made results worse on a mixed set of 38 real recordings of 16 faults.
 - The fault advice hasn’t been reviewed by a professional mechanic yet.
 
