@@ -74,7 +74,7 @@ Most other fault recordings online, on YouTube, forums and in datasets built fro
 
 ## Put it online
 
-The live site is at **https://sreejilal.github.io/enginie/**.
+The live site is at **https://dhyan-gesus.github.io/Enginie/**.
 
 GitHub Pages publishes it from the `main` branch, using the repository root. The `index.html` at the root forwards visitors to `public/`, and `.nojekyll` makes GitHub serve the files exactly as they are. Pushing to `main` updates the site within a minute or two, and `.github/workflows/pages.yml` runs the tests on every push.
 

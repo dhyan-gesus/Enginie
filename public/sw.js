@@ -2,7 +2,7 @@
 // first so that updates arrive straight away, and falls back to the saved copy when offline.
 
 // Bump the version whenever this list changes. Every file in it must exist, or nothing is saved.
-const CACHE = 'enginie-v7';
+const CACHE = 'enginie-v8';
 const FILES = [
   './',
   'index.html',

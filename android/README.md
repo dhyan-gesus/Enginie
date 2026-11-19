@@ -7,5 +7,5 @@ It was generated with [Bubblewrap](https://github.com/GoogleChromeLabs/bubblewra
 To rebuild: copy `twa-manifest.json` into an empty folder, raise `appVersionCode`, run
 `bubblewrap update`, then `gradlew assembleRelease bundleRelease` and sign the outputs.
 
-For the app to open without a browser bar, `https://sreejilal.github.io/.well-known/assetlinks.json`
-must list the app's signing certificate. That file lives in the `sreejilal.github.io` repository.
+For the app to open without a browser bar, `https://dhyan-gesus.github.io/.well-known/assetlinks.json`
+must list the app's signing certificate. That file lives in the `dhyan-gesus.github.io` repository.
